@@ -37,7 +37,7 @@ namespace NZWalks.API.Repositories
         }
 
         /// <summary>
-        /// Fetch
+        /// Get All Async
         /// </summary>
         /// <returns></returns>
         public async Task<List<Walk>> GetAllAsync()
