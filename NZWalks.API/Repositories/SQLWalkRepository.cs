@@ -6,11 +6,19 @@ namespace NZWalks.API.Repositories
 {
     public class SQLWalkRepository : IWalkRepository
     {
+        /// <summary>
+        /// Db Context
+        /// </summary>
         private readonly NZWalksDbContext dbContext;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="dbContext"></param>
         public SQLWalkRepository(NZWalksDbContext dbContext)
         {
             this.dbContext = dbContext;
+            //Comment
         }
 
         public async Task<Walk> CreateAsync(Walk walk)
