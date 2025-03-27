@@ -4,6 +4,9 @@ using NZWalks.API.Models.Domain;
 
 namespace NZWalks.API.Repositories
 {
+    /// <summary>
+    /// SqlWalkRepository
+    /// </summary>
     public class SQLWalkRepository : IWalkRepository
     {
         /// <summary>
@@ -21,6 +24,11 @@ namespace NZWalks.API.Repositories
             //Comment
         }
 
+        /// <summary>
+        /// Create
+        /// </summary>
+        /// <param name="walk"></param>
+        /// <returns></returns>
         public async Task<Walk> CreateAsync(Walk walk)
         {
             await dbContext.Walks.AddAsync(walk);
@@ -37,6 +45,11 @@ namespace NZWalks.API.Repositories
             return await dbContext.Walks.Include("Difficulty").Include("Region").ToListAsync();
         }
 
+        /// <summary>
+        /// Fetch by Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<Walk?> GetByIdAsync(Guid id)
         {
             return await dbContext.Walks.Include("Difficulty").Include("Region").FirstOrDefaultAsync(x => x.Id == id);
