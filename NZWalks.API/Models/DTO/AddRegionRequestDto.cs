@@ -6,17 +6,17 @@
     public class AddRegionRequestDto
     {
         /// <summary>
-        /// Code
+        /// Class
         /// </summary>
         public string Code { get; set; }
 
         /// <summary>
-        /// Name
+        /// Class
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// ImageURL
+        /// Class
         /// </summary>
         public string? RegionImageUrl { get; set; }
     }
