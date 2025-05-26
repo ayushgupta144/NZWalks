@@ -11,12 +11,12 @@
         public string Code { get; set; }
 
         /// <summary>
-        /// Name
+        /// Name Ayush
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// ImageURL
+        /// ImageURL img
         /// </summary>
         public string? RegionImageUrl { get; set; }
     }
