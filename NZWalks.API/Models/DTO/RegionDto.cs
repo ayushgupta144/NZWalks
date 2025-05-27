@@ -2,8 +2,14 @@
 {
     public class RegionDto
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public Guid Id { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string Code { get; set; }
 
         public string Name { get; set; }

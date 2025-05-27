@@ -6,12 +6,12 @@
     public class AddRegionRequestDto
     {
         /// <summary>
-        /// Class
+        /// Ayush v6
         /// </summary>
         public string Code { get; set; }
 
         /// <summary>
-        /// Class
+        /// Ayush v6
         /// </summary>
         public string Name { get; set; }
 
